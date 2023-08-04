@@ -3,7 +3,7 @@ const Contador = () => {
     const [numero, setNumero] = useState(0);
 
     const aumentar =() =>{
-        console.log("Hacer click"),
+        console.log("Hacer click");
         setNumero(numero+1);
     }
     return (
