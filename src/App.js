@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import C01componente from "./components/C01componente";
+import C02contador from "./components/C02contador";
+import C03componenteConCss from "./components/C03compCSS";
+import Componente from "./components/P01componente";
+import Contador from "./components/P02estado";
+import Contador2 from "./components/P03dobleestado";
+import Variable from "./components/P04variable";
+import Matriz from "./components/P06matriz";
+import MatrizOperaciones from "./components/P07matrizOperaciones";
 
-function App() {
+function App  (){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Practicas ... React</h1>
+      <Componente/>
+      <hr/>
+      <Contador/>
+      <hr/>
+      <Contador2/>
+      <hr/>
+      <Variable xVariable="Lectura de variables"/>
+      <hr/>
+      <Matriz/>
+      <hr/>
+      <MatrizOperaciones/>
+      <hr/>
+      <C01componente/>
+      <hr/>
+      <C02contador/>
+      <hr/>
+      <C03componenteConCss/>
     </div>
   );
 }
